@@ -12,3 +12,7 @@ jobs:
         run: tree
       - name: see the List
         run: ls
+      - name: setup node js in my project
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
