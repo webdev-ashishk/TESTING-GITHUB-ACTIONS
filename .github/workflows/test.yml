@@ -7,4 +7,5 @@ jobs:
       - name: hello world
         run: echo "HELLO WORLD PRINTED ON GITHUB ACTIONS"
       - name: see the directory
-        run : tree
+        uses: actions/checkout@v2
+        run: tree
