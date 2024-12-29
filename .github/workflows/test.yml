@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: hello world
         run: echo "HELLO WORLD PRINTED ON GITHUB ACTIONS"
+      - name: see the directory
+        run : tree
