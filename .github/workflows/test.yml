@@ -6,5 +6,6 @@ jobs:
     steps:
       - name: hello world
         run: echo "HELLO WORLD PRINTED ON GITHUB ACTIONS"
-      - uses: actions/checkout@v2
-      - run: tree
+      - name: cloning the current repo
+        uses: actions/checkout@v2
+        run: tree
