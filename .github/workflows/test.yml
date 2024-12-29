@@ -8,8 +8,7 @@ jobs:
         run: echo "HELLO WORLD PRINTED ON GITHUB ACTIONS"
       - name: cloning the current repo
         uses: actions/checkout@v2
-        with:
-          sparse-checkout: |
-            .github
-            src
-      - run: tree
+      - name: see the tree view
+        run: tree
+      - name: see the List
+        run: ls
