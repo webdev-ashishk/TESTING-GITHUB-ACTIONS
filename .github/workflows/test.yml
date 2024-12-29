@@ -8,4 +8,4 @@ jobs:
         run: echo "HELLO WORLD PRINTED ON GITHUB ACTIONS"
       - name: cloning the current repo
         uses: actions/checkout@v2
-        run: tree
+      - run: tree
