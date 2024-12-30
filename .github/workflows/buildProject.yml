@@ -2,15 +2,15 @@ name: Building Build of the Project
 on: [push]
 jobs:
   First-Project-Build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: clone the current repo
-      uses: actions/checkout@v2
-    - name: setup node js
-      uses: actions/setup-node@v2
-    - name: installing node_modules
-      run: npm install
-    - name: Make Build
-      run: npm run build
-    - name: completed all the tasks
-      run: echo completed!
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the current repo
+        uses: actions/checkout@v2
+      - name: setup node js
+        uses: actions/setup-node@v2
+      - name: installing node_modules
+        run: npm install
+      - name: Make Build
+        run: npm run build
+      - name: completed all the tasks
+        run: echo completed!
