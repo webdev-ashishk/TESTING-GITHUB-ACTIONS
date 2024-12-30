@@ -1,5 +1,5 @@
 name: Building Build of the Project
-on: [push]
+on: push
 jobs:
   First-Project-Build:
     runs-on: ubuntu-latest
