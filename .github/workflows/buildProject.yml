@@ -3,11 +3,11 @@ on: [push]
 jobs: 
   First Project Build
    runs-on: ubuntu-latest
-    steps: 
+   steps: 
          - name: clone the current repo
-           run: actions/checkout@v2
+           uses: actions/checkout@v2
          - name: setup node js
-           run: setup-nodejs/nodejs@v2
+           uses: actions/setup-node@v2
          - name: installing node_modules
            run: npm install
          - name: Make Build
